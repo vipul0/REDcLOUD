@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>LOGIN</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage"><img src="images/redcloud.jpg" alt="Mountain View" style="width:100px;height:30px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="portfolio.html">PORTFOLIO</a></li>
+        <li><a href="pricing.html">PRICING</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+		<li><a href="login.html">LOGIN</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CREATE ACCOUNT</h2>
+  <form action="/script/create.py" method="get">
+  <div class="row">
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="uname" name="uname" placeholder="UserName" type="text" required><br />
+        </div>
+		
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="upass" name="upass" placeholder="Password" type="PASSWORD" required>
+        </div>
+		<br />
+      </div>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Create</button>
+        </div>
+      </div>
+    </div>
+	</div>
+	</form>
+</div>
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>REDcLOUD Pvt.Ltd. <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+</footer>
+
+</body>
+</html>
